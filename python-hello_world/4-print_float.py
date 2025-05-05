@@ -2,4 +2,4 @@
 
 number = 3.14159
 
-print("Float: {number.2f}")
+print("Float: {number:.2f}")
