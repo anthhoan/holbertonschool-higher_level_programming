@@ -1,4 +1,7 @@
 #!/usr/bin/python3
 
-for x in range(99):
-    print(f"{x} x {hex(x)}")
+number = 0
+
+for number in range(99):
+    hexadecimal = hex(number)
+    print("{} x {}".format(number, hexadecimal))
