@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+def "__main__"
 import sys
 
 add = 0
