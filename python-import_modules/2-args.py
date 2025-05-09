@@ -16,5 +16,5 @@ else:
         if n > 0:
             print("{} arguments.".format(n - 1))
 
-for i in range (1, n):
+for i in range(1, n):
     print("{}: {}".format(i, string[i]))
