@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 def no_c(my_string):
-    return my_string.replace('c', '').replace('C', '')
-
-# https://www.geeksforgeeks.org/remove-all-occurrences-of-a-character-in-a-string/
+    new_string = ""
+    for char in my_string:
+        if char != 'c' and char != 'C':
+            new_string += char
+    return (new_string)
