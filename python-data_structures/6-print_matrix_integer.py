@@ -2,10 +2,12 @@
 
 def print_matrix_integer(matrix=[[]]):
 
+    if len(matrix) == 0:
+        return (None)
+
     for row in range(len(matrix)):
         for column in range(len(matrix[row])):
-            if len(matrix[row]) == ',':
-                print("{:d}".format(matrix[row][column]), end="")
-            else:
-                print("{:d}".format(matrix[row][column]), end=" ")
+            if column != 0:
+                print(" ", end="")
+            print("{:d}".format(matrix[row][column]), end="")
         print()
