@@ -2,7 +2,7 @@
 
 def best_score(a_dictionary):
     if not a_dictionary:
+        # if not checks if the dictionary is empty
         return (None)
-
-    best = max(a_dictionary, key =a_dictionary.get)
+    best = max(a_dictionary, key = a_dictionary.get)
     return (best)
