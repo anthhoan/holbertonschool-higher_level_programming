@@ -1,0 +1,31 @@
+SyntaxError: Occurs when the code violates Python's grammar rules, preventing the interpreter from understanding the code.
+
+TypeError: Arises when an operation or function is applied to an object of an inappropriate type.
+
+ValueError: Raised when a function receives an argument of the correct type but an invalid value.
+
+NameError: Occurs when a variable is used without being defined.
+
+IndexError: Raised when trying to access an index that is out of range in a sequence (e.g., list, tuple).
+
+KeyError: Occurs when trying to access a key that does not exist in a dictionary. 
+
+AttributeError: Raised when trying to access an attribute or method that an object does not possess. 
+
+ModuleNotFoundError/ImportError: Occurs when Python cannot find or load a specified module.
+
+FileNotFoundError: Raised when a file or directory cannot be found.
+
+ZeroDivisionError: Occurs when attempting to divide a number by zero.
+
+MemoryError: Raised when an operation runs out of memory.
+
+OverflowError: Occurs when the result of an arithmetic operation is too large to be represented. 
+
+IndentationError: A syntax error related to incorrect indentation.
+
+AssertionError: Raised when an assert statement fails (condition evaluates to False). 
+
+RuntimeError: A generic error raised when no more specific exception fits.
+
+Logical Errors: These errors occur in the program's logic, causing it to produce unintended results, even though the code runs without crashing.
