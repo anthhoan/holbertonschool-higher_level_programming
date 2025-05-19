@@ -10,7 +10,6 @@ def safe_print_division(a, b):
     return (result)
 
 
-
 """
 ZeroDivisionError: Occurs when attempting to divide a number by zero.
 """
