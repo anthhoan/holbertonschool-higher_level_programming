@@ -10,3 +10,7 @@ def safe_print_list(my_list=[], x=0):
         pass
     print()
     return (count)
+
+"""
+IndexError: Raised when trying to access an index that is out of range in a sequence (e.g., list, tuple).
+"""
