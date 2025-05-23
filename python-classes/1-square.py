@@ -6,7 +6,7 @@ class Square:
     """class Square"""
     def __init__(self, size):
         """__init__ initializes the square
-        
+
         Attributes:
             size: The private size of the square
         """
