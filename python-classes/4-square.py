@@ -3,9 +3,7 @@
 
 
 class Square:
-    """Represents a square with a size.
-    Provides methods to get/set the size and calculate the area.
-    """
+    """A class representing a Square"""
 
     def __init__(self, size=0):
         """Initialize a new Square.
@@ -17,16 +15,12 @@ class Square:
 
     @property
     def size(self):
-        """Retrieve the size of the square.
-
-        Returns:
-            int: The current size of the square.
-        """
+        """Getter for the size of square"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Set the size of the square with validation.
+        """Setter for the size of square
 
         Args:
             value (int): The new size to set.
@@ -42,9 +36,5 @@ class Square:
         self.__size = value
 
     def area(self):
-        """Calculate and return the area of the square.
-
-        Returns:
-            int: The area (size squared).
-        """
+        """Return the area of square"""
         return self.__size ** 2
