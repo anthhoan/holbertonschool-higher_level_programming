@@ -73,3 +73,6 @@ class Rectangle:
                 rectangle += (self.__width * "#" + '\n')
             rectangle += (self.__width * "#")
             return (rectangle)
+
+    def __repr__(self):
+        return (f"Rectangle ({self.__width}, {self.__height})")
