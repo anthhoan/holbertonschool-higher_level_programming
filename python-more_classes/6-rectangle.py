@@ -5,7 +5,7 @@
 class Rectangle:
     """a class representing a Rectangle"""
     number_of_instances = 0
-    
+
     def __init__(self, width=0, height=0):
         """initializing a rectangle and increment after new instance"""
         self.width = width
