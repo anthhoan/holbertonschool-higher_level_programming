@@ -17,7 +17,9 @@ def safe_print_integer(value):
     except Exception:
         return (False)
 
-TypeError: Arises when an operation or function is applied to an object of an inappropriate type.
+TypeError: Arises when an operation or function is applied/
+to an object of an inappropriate type.
 
-ValueError: Raised when a function receives an argument of the correct type but an invalid value.
+ValueError: Raised when a function receives an argument of/
+the correct type but an invalid value.
 """
