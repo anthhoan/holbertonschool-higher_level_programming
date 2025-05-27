@@ -19,7 +19,7 @@ class Rectangle:
         """Setter for the width of square
 
         Args:
-            value (int): The new size to set.
+            value (int): The new width to set.
 
         Raises:
             TypeError: If the value is not an integer.
@@ -41,7 +41,7 @@ class Rectangle:
         """Setter for the height of square
 
         Args:
-            value (int): The new size to set.
+            value (int): The new height to set.
 
         Raises:
             TypeError: If the value is not an integer.
