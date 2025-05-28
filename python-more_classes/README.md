@@ -164,5 +164,3 @@ This `Rectangle` class:
 * Supports printing and comparison.
 * Provides methods for area, perimeter, and square creation.
 * Is well-structured and object-oriented.
-
-Let me know if you want examples or test cases to see how it works in action!
