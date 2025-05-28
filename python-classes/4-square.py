@@ -6,10 +6,10 @@ class Square:
     """A class representing a Square"""
 
     def __init__(self, size=0):
-        """Initialize a new Square.
+        """__init__ initializes the square
 
-        Args:
-            size (int): The size of one side of the square (default is 0).
+        Attributes:
+            size: The private size of the square
         """
         self.size = size  # This uses the setter for validation
 
