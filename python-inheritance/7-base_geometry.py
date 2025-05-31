@@ -15,7 +15,6 @@ class BaseGeometry:
         if not isinstance(value, int):
             """raise TypeError with message"""
             raise TypeError("{} must be an integer".format(name))
-
-        if value <= 0:
+        elif value <= 0:
             """raise ValueError with message"""
             raise ValueError("{} must be greater than 0".format(name))
