@@ -1,4 +1,4 @@
-Test for 7-base_geometry
+Test for 7-base_geometry.py
 -------------------------------------------
 Test 1: area() method (should raise Exception)
 ---------------------------------------------
