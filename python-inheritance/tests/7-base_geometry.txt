@@ -1,40 +1,32 @@
-Test for 7-base_geometry.py
--------------------------------------------
-
-Test 1: area() method (should raise Exception)
----------------------------------------------
 from base_geometry import BaseGeometry
 
+print("Test 1: area() method (should raise Exception)")
 bg = BaseGeometry()
 try:
     bg.area()
 except Exception as e:
     print("Test 1 Passed:", e)
 
-Test 2: integer_validator with valid input
----------------------------------------------
+print("\nTest 2: integer_validator with valid input")
 try:
     bg.integer_validator("length", 5)
     print("Test 2 Passed: Valid input accepted")
 except Exception as e:
     print("Test 2 Failed:", e)
 
-Test 3: integer_validator with non-integer input
----------------------------------------------
+print("\nTest 3: integer_validator with non-integer input")
 try:
     bg.integer_validator("length", "5")
 except Exception as e:
     print("Test 3 Passed:", e)
 
-Test 4: integer_validator with zero
----------------------------------------------
+print("\nTest 4: integer_validator with zero")
 try:
     bg.integer_validator("length", 0)
 except Exception as e:
     print("Test 4 Passed:", e)
 
-Test 5: integer_validator with negative integer
----------------------------------------------
+print("\nTest 5: integer_validator with negative integer")
 try:
     bg.integer_validator("length", -3)
 except Exception as e:
