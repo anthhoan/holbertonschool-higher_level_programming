@@ -1,7 +1,7 @@
 # test.txt
 # Tests for 7-base_geometry.py
 
-from 7_base_geometry import BaseGeometry
+from 7-base_geometry import BaseGeometry
 
 print("Running tests for BaseGeometry...\n")
 
