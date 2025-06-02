@@ -10,6 +10,7 @@ class Square(Rectangle):
         """initializing a square"""
         super().__init__(size, size)
         """super() function that refers to parent class"""
-        self.integer_validator("size", size)
+        self.integer_validator("width", size)
+        self.integer_validator("height", size)
         """integer validator raise typeError or valueError"""
         self.__size = size
