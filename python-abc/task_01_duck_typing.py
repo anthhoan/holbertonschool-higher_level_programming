@@ -17,7 +17,7 @@ class Circle(Shape):
     """class Circle that inherits Shape"""
     def __init__(self, radius):
         """initializing radius"""
-        self.radius = radius
+        self.radius = abs(radius)
 
     def area(self):
         """method toreturn the area of the circle"""
