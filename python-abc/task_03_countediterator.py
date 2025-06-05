@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import iter
 
 class CountedIterator(iter):
     def __init__(self, iter_object, counter):
