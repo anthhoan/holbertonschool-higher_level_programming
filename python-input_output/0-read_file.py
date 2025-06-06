@@ -7,4 +7,4 @@ def read_file(filename=""):
     with open(filename, "r", encoding="utf-8") as f:
         """opens the file with r = read"""
         print(f.read(), end="")
-    return(f.read())
+    return (f.read())
