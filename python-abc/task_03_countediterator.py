@@ -3,7 +3,7 @@
 from the iter function."""
 
 
-class CountedIterator(iter):
+class CountedIterator:
     """class CountedIterator"""
     def __init__(self, some_iterable):
         """two attributes, the iterator object, and a counter"""
@@ -12,7 +12,7 @@ class CountedIterator(iter):
 
     def get_count(self):
         """return the current value of the counter"""
-        return self.count
+        return (self.count)
 
     def __next__(self):
         """next method raises a StopIteration exception when there are no/
