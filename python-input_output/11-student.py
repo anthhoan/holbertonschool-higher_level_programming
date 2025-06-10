@@ -28,4 +28,4 @@ class Student:
         """reloads values"""
         for attr in json:
             if attr in self.__dict__:
-                self.__dict[attr] = json[attr]
+                self.__dict__[attr] = json[attr]
