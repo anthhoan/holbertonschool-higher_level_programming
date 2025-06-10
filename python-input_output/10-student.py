@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 """Student to JSON with Filter"""
+"""in the json function, if attrs is none it will return itself
+else:
+it will loop through each dict = object and paste it into a new dictionary
+once the loop doesn't find any more objects, it will return the new_dict"""
+
 
 class Student:
     """class that defines a Student"""
@@ -18,8 +23,3 @@ class Student:
                 if attr in self.__dict__:
                     new_dict[attr] = self.__dict__[attr]
             return (new_dict)
-
-    """in the json function, if attrs is none it will return itself
-    else:
-    it will loop through each dict = object and paste it into a new dictionary
-    once the loop doesn't find any more objects, it will return the new_dict"""
