@@ -4,6 +4,7 @@ and lists all cities of that state, using the database hbtn_0e_4_usa"""
 import MySQLdb
 import sys
 
+
 def filter_cities(username, password, database, state_name):
     """Script to connect to database and run SQL query"""
     db = MySQLdb.connect(
