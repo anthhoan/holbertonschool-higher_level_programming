@@ -22,6 +22,7 @@ def get_all_states(username, password, database):
     cur.close()
     db.close()
 
+
 if __name__ == "__main__":
     """main function"""
     get_all_states(sys.argv[1], sys.argv[2], sys.argv[3])
