@@ -16,7 +16,7 @@ def states_user_inputs(username, password, database, state_searched):
     )
     cur = db.cursor()
     cur.execute("SELECT * FROM states "
-                "WHERE name LIKE '{0}' "
+                "WHERE name LIKE BINARY '{0}' "
                 "ORDER BY id ASC;".format(state_searched))
     result = cur.fetchall()
     for row in result:
