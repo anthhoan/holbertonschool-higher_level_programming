@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""script that takes in arguments and displays all 
+"""script that takes in arguments and displays all
 values in the states table of hbtn_0e_0_usa
-where name matches the argument. But this time, 
+where name matches the argument. But this time,
 write one that is safe from MySQL injections!"""
 import MySQLdb
 import sys
@@ -19,7 +19,7 @@ def states_user_inputs(username, password, database, state_searched):
     cur = db.cursor()
     cur.execute("SELECT * FROM states "
                 "WHERE name LIKE BINARY %s "
-                "ORDER BY id ASC;",(state_searched,))
+                "ORDER BY id ASC;", (state_searched,))
     result = cur.fetchall()
     for row in result:
         print(row)
