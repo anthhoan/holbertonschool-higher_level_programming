@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script that takes in an argument and displays all values in the 
+"""Script that takes in an argument and displays all values in the
 states table of hbtn_0e_0_usa where name matches the argument."""
 import MySQLdb
 import sys
@@ -16,7 +16,8 @@ def states_user_inputs(username, password, database, state_searched):
     )
     cur = db.cursor()
     cur.execute("SELECT * FROM states "
-                "WHERE name LIKE '{0}' ORDER BY id ASC;".format(state_searched))
+                "WHERE name LIKE '{0}' "
+                "ORDER BY id ASC;".format(state_searched))
     result = cur.fetchall()
     for row in result:
         print(row)
