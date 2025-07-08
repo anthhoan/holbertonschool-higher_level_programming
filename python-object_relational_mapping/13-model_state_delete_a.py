@@ -18,7 +18,7 @@ if __name__ == "__main__":
     session = Session()
     """Create actual session"""
     for letter_a in session.query(State).order_by(State.id)\
-        .filter(State.name.contains('a')).all():
+                    .filter(State.name.contains('a')).all():
         session.delete(letter_a)
     """Using the session with SQLAlchemy"""
     session.commit()
