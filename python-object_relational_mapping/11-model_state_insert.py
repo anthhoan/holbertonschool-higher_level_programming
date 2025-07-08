@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Print the first State object
-from the database hbtn_0e_6_usa with SQLAlchemy"""
+"""Adds the State object 'Louisiana'
+to the database hbtn_0e_6_usa with SQLAlchemy"""
 import sys
 from model_state import Base, State
 from sqlalchemy import create_engine
@@ -16,12 +16,12 @@ if __name__ == "__main__":
     """Create session factory"""
     session = Session()
     """Create actual session"""
-    new_state = State(name = "Louisiana")
+    new_state = State(name ="Louisiana")
     """Using the session with SQLAlchemy"""
     session.add(new_state)
     """Adding a new object to the database"""
-    print(new_state.id)
     session.commit()
     """Pushing changes to the database"""
+    print(new_state.id)
     session.close()
     """Closing the session"""
