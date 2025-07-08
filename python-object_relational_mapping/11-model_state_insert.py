@@ -17,7 +17,7 @@ if __name__ == "__main__":
     """Create session factory"""
     session = Session()
     """Create actual session"""
-    new_state = State(name ="Louisiana")
+    new_state = State(name="Louisiana")
     """Using the session with SQLAlchemy"""
     session.add(new_state)
     """Adding a new object to the database"""
