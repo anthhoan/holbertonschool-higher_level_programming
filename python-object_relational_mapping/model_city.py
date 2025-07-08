@@ -13,7 +13,7 @@ class State(Base):
     name = Column(String(128), nullable=False)
 
 
-class Cities(Base):
+class City(Base):
     """Cities class that inherits from Base"""
     __tablename__ = 'cities'
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)

@@ -2,7 +2,7 @@
 """List all State objects from the database hbtn_0e_6_usa with SQLAlchemy"""
 import sys
 from model_state import Base, State
-from model_city import Base, Cities
+from model_city import Base, City
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
 
@@ -18,8 +18,8 @@ if __name__ == "__main__":
     """Create session factory"""
     session = Session()
     """Create actual session"""
-    results = session.query(State, Cities).join(Cities, State.id == Cities.state_id)\
-        .order_by(State.id, Cities.id).all()
+    results = session.query(State, City).join(City, State.id == City.state_id)\
+        .order_by(State.id, City.id).all()
     for state, cities in results:
         print("{}: ({}) {}".format(state.name, cities.id, cities.name))
     """Using the session with SQLAlchemy"""
