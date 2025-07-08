@@ -17,7 +17,7 @@ if __name__ == "__main__":
     session = Session()
     """Create actual session"""
     get_state = session.query(State).order_by(State.id)\
-            .filter(State.name == sys.argv[4]).first()
+        .filter(State.name == sys.argv[4]).first()
     if get_state is None:
         print("Not found")
     else:
