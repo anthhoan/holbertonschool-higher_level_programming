@@ -15,6 +15,6 @@ COLLATE utf8mb4_unicode_ci;
 
 -- Converts the 'name' column to UTF
 ALTER TABLE first_table
-MODIFY name VARCHAR(255)
+MODIFY name VARCHAR(254)
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
