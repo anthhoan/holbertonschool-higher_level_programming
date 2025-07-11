@@ -10,11 +10,11 @@ USE hbtn_0c_0;
 
 -- Converts the table to UTF
 ALTER TABLE first_table
-CHARACTER SET utf8mb4
+CONVERT TO CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
 -- Converts the 'name' column to UTF
 ALTER TABLE first_table
-MODIFY name VARCHAR(254)
+MODIFY name VARCHAR(256)
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
