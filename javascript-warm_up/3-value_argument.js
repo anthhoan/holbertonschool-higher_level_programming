@@ -1,8 +1,11 @@
 #!/usr/bin/node
-const args = process.argv.slice(2);
 
-if (args.length === 0) {
+if (!process.argv[2]) {
   console.log('No argument');
-} else {
-  console.log(args.join(" "));
+}
+
+for (const index in process.argv) {
+  if (index === '2') {
+    console.log(process.argv[index]);
+  }
 }
